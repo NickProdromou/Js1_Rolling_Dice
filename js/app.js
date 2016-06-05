@@ -17,15 +17,26 @@ Use the html and css code included in the starter code folder to get started.
 
 */
 
-//variables
-var random1 = Math.round(Math.random() * (6 - 1) + 1);
-var random2 = Math.round(Math.random() * (6 - 1) + 1);
-
-//Test to see if variables output correct
-// console.log(random1);
-// console.log(random2);
 
 //cache DOM
 var firstDie = document.getElementById("first-die");
 var secondDie = document.getElementById("second-die");
 var rollDice = document.getElementById("roll-dice");
+
+//functions
+function generateRandom1() {
+  var random1 = Math.round(Math.random() * (6 - 1) + 1);
+  return "dice-" + random1;
+}
+
+function generateRandom2() {
+  var random2 = Math.round(Math.random() * (6 - 1) + 1);
+  return "dice-" + random2;
+}
+
+// event handler
+
+rollDice.onclick = (function(){
+  firstDie.className = generateRandom1();
+  secondDie.className = generateRandom2();
+});
