@@ -1,6 +1,7 @@
 /*
 
-Creating a page where every time the user hits the "Roll Dice" button, the screen randomly updates the two dice. Use the html and css code included in the starter code folder to get started.
+Creating a page where every time the user hits the "Roll Dice" button, the screen randomly updates the two dice.
+Use the html and css code included in the starter code folder to get started.
 
 1) Write down pseudocode for the following program.
 
@@ -15,3 +16,10 @@ Creating a page where every time the user hits the "Roll Dice" button, the scree
 3) Check to see if the Dice Roll has been hit, if it has run the diceRoll function.
 
 */
+
+
+var random1 = Math.round(Math.random() * (6 - 1) + 1);
+var random2 = Math.round(Math.random() * (6 - 1) + 1);
+
+console.log(random1);
+console.log(random2);
