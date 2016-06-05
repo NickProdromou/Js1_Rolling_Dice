@@ -1,7 +1,3 @@
-# Js1_Rolling_Dice
-A homework excersise for the JavaScript Development course at General Assembly. Intended to practice the use of conditional statements and functions.
-
-
 # Rolling Dice
 
 For this exercise, you'll be creating a page that displays a random update of
