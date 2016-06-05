@@ -24,19 +24,15 @@ var secondDie = document.getElementById("second-die");
 var rollDice = document.getElementById("roll-dice");
 
 //functions
-function generateRandom1() {
-  var random1 = Math.round(Math.random() * (6 - 1) + 1);
-  return "dice-" + random1;
+function generateRandom() {
+  var randomNum = Math.round(Math.random() * (6 - 1) + 1);
+  return "dice-" + randomNum;
 }
 
-function generateRandom2() {
-  var random2 = Math.round(Math.random() * (6 - 1) + 1);
-  return "dice-" + random2;
-}
+//Combine into single function
 
 // event handler
-
 rollDice.onclick = (function(){
-  firstDie.className = generateRandom1();
-  secondDie.className = generateRandom2();
+  firstDie.className = generateRandom();
+  secondDie.className = generateRandom();
 });
